@@ -84,4 +84,37 @@ public class ListViewAdapter extends BaseAdapter {
         }
         notifyDataSetChanged();
     }
+    
+//       public Filter getFilter() {
+
+//         return new Filter() {
+//             @Override
+//             protected FilterResults performFiltering(CharSequence charSequence) {
+
+//                 String charString = charSequence.toString().replaceAll(" ", "").toLowerCase();
+
+//                 if (charString.isEmpty()) {
+
+//                     mFilteredList = aiModelList;
+//                 } else {
+//                     ArrayList<PharmacyModel> filteredList = new ArrayList<>();
+//                     for (PharmacyModel androidVersion : aiModelList) {
+//                         if (androidVersion.getPharmacyName().replaceAll(" ", "").toLowerCase().contains(charString) || androidVersion.getLicenseId().replaceAll(" ", "").toLowerCase().contains(charString) || androidVersion.getAddress().replaceAll(" ", "").toLowerCase().contains(charString)) {
+//                             filteredList.add(androidVersion);
+//                         }
+//                     }
+//                     mFilteredList = filteredList;
+//                 }
+//                 FilterResults filterResults = new FilterResults();
+//                 filterResults.values = mFilteredList;
+//                 return filterResults;
+//             }
+
+//             @Override
+//             protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+//                 mFilteredList = (ArrayList<PharmacyModel>) filterResults.values;
+//                 notifyDataSetChanged();
+//             }
+//         };
+    }
 }
