@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 if(s.length()>4){
                     String who = editText.getText().toString().toLowerCase(Locale.getDefault());
                     adapter.myFilter(who);
+                       //patientsAdapter.getFilter().filter(s);
                 }
 
               //  editText.setText(who);
