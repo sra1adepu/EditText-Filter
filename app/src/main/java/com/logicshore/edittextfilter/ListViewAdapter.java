@@ -84,37 +84,38 @@ public class ListViewAdapter extends BaseAdapter {
         }
         notifyDataSetChanged();
     }
-    
-//       public Filter getFilter() {
-
+    //here arraylist is taking data patientlist is filter data
+//  public Filter getFilter() {
 //         return new Filter() {
 //             @Override
 //             protected FilterResults performFiltering(CharSequence charSequence) {
 
 //                 String charString = charSequence.toString().replaceAll(" ", "").toLowerCase();
-
+// Log.d("fileterText",charString);
+//                 Log.d("ArraylistSize",patientsList.size()+"");
 //                 if (charString.isEmpty()) {
+//                     arrayList = patientsList;
 
-//                     mFilteredList = aiModelList;
 //                 } else {
-//                     ArrayList<PharmacyModel> filteredList = new ArrayList<>();
-//                     for (PharmacyModel androidVersion : aiModelList) {
-//                         if (androidVersion.getPharmacyName().replaceAll(" ", "").toLowerCase().contains(charString) || androidVersion.getLicenseId().replaceAll(" ", "").toLowerCase().contains(charString) || androidVersion.getAddress().replaceAll(" ", "").toLowerCase().contains(charString)) {
-//                             filteredList.add(androidVersion);
+//                     ArrayList<Patients> filteredList = new ArrayList<>();
+//                     for (Patients patients : patientsList) {
+//                         if (patients.getId().replaceAll(" ", "").toLowerCase().contains(charString) || patients.getName().replaceAll(" ", "").toLowerCase().contains(charString) || patients.getReason().replaceAll(" ", "").toLowerCase().contains(charString)|| patients.getAge().replaceAll(" ", "").toLowerCase().contains(charString)|| patients.getContact().replaceAll(" ", "").toLowerCase().contains(charString)) {
+//                             filteredList.add(patients);
 //                         }
 //                     }
-//                     mFilteredList = filteredList;
+//                     arrayList = filteredList;
 //                 }
 //                 FilterResults filterResults = new FilterResults();
-//                 filterResults.values = mFilteredList;
+//                 filterResults.values = arrayList;
 //                 return filterResults;
 //             }
 
 //             @Override
 //             protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-//                 mFilteredList = (ArrayList<PharmacyModel>) filterResults.values;
+//                 arrayList = (ArrayList<Patients>) filterResults.values;
 //                 notifyDataSetChanged();
 //             }
 //         };
+    }
     }
 }
